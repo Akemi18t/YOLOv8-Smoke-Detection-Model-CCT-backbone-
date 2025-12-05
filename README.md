@@ -10,7 +10,7 @@ In addition to the core YOLOv8 detector, this project also includes a **CCT (Com
 
 ---
 
-## 📌 Table of Contents  
+## Table of Contents  
 - [Overview](#overview)  
 - [Dataset](#dataset)  
 - [Training Environment (Google Colab)](#training-environment-google-colab)  
@@ -25,25 +25,25 @@ In addition to the core YOLOv8 detector, this project also includes a **CCT (Com
 
 ---
 
-## 🔎 Overview  
+## Overview  
 
 The purpose of this project is to build a **lightweight smoke detection system** capable of running in real time on embedded hardware. YOLOv8 was chosen due to its strong performance, small size, and fast inference speed.
 
-### Key Features:
-- 🔥 YOLOv8-based smoke detector  
-- 📦 Trained on Roboflow smoke dataset  
-- 🚀 Runs on Jetson Xavier NX  
-- ✨ CCT-based enhancement proposed for verification  
-- 📸 Includes screenshots and testing examples  
-- 📝 All code and training steps documented in this repository  
+### Features(What the model does):
+- YOLOv8-based smoke detector  
+- Trained on Roboflow smoke dataset  
+- Runs on Jetson Xavier NX  
+- CCT-based enhancement proposed for verification  
+- Includes screenshots and testing examples  
+- All code and training steps documented in this repository  
 
 ---
 
-## 📂 Dataset  
+## Dataset  
 
 This project uses the **Smoke Detection Dataset** from Roboflow:
 
-🔗 **Dataset URL:**  
+**Dataset URL:**  
 https://universe.roboflow.com/jiho-wrqg7/smoke-ddba9
 
 ### Dataset Details  
