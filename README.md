@@ -65,3 +65,19 @@ rf = Roboflow(api_key="YOUR_API_KEY")
 project = rf.workspace("akemi").project("smoke-ddba9-zjcub")
 version = project.version(1)
 dataset = version.download("yolov8")
+
+## Training Environment (Google Colab)
+### Detailed Training Notebook (PDF)
+
+A full step-by-step record of the YOLOv8 training process on Google Colab is provided here:
+
+[Download Training PDF](YOLOv8_Training_Google_Colab.pdf)
+
+This PDF includes:
+- Dataset import from Roboflow  
+- YOLOv8 installation  
+- Training configuration  
+- Epoch logs  
+- Model export  
+- Validation testing  
+
