@@ -16,8 +16,7 @@ In addition to the core YOLOv8 detector, this project also includes a **CCT (Com
 - [Training Environment (Google Colab)](#training-environment-google-colab)  
 - [Model Export](#model-export)  
 - [Jetson Xavier NX Deployment](#jetson-xavier-nx-deployment)  
-- [CCT Enhancement Proposal](#cct-enhancement-proposal)  
-- [Screenshots](#screenshots)  
+- [CCT Enhancement Proposal](#cct-enhancement-proposal)   
 - [Results](#results)  
 - [Limitations](#limitations)  
 - [Future Work](#future-work)
@@ -82,6 +81,9 @@ This PDF includes:
 - Validation testing  
 
 
+### Jetson Xavier NX Deployment
+
+An attempt was made to deploy the trained YOLOv8 model on the NVIDIA Jetson Xavier NX for real-time edge inference. However, during installation of the `ultralytics` package on the Jetson (ARM/aarch64 architecture), a dependency (`puccinialin`) failed to install due to lack of ARM compatibility on PyPI. As a result, full YOLOv8 execution on the Jetson could not be completed within the project time frame. This deployment attempt and error were documented as part of the project evaluation.
 
 
 
@@ -103,4 +105,21 @@ This PDF includes:
 7. The transformed crop was passed into the ViT model to generate top-5 prediction outputs.
 
 This process demonstrates a hybrid CNN–Transformer pipeline where YOLOv8 performs fast object detection and the transformer performs second-stage feature-based analysis on the detected region.
+
+### Results
+
+The trained YOLOv8 model successfully detected smoke in validation images with clear bounding boxes. The detection results, cropped regions, and transformer-based verification outputs are documented in the following files:
+
+- `YOLOv8_Training_Google_Colab.pdf`
+- `CCT_backbone.pdf`
+
+These results confirm that the model is capable of detecting smoke and that the hybrid YOLO + Transformer pipeline functions correctly.
+
+### Limitations
+
+The model was trained on a relatively small dataset, which may limit its generalization to unseen environments. In addition, full Jetson Xavier NX deployment was not completed due to package compatibility issues on ARM architecture. The transformer enhancement was used for inference only and was not fine-tuned on the smoke dataset.
+
+### Future Work
+
+Future improvements include collecting a larger and more diverse smoke dataset, fine-tuning the transformer model specifically for smoke classification, and resolving Jetson dependency issues to enable full real-time edge deployment. Additional work could also include extending the system for fire detection and emergency response applications.
 
