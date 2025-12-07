@@ -81,3 +81,26 @@ This PDF includes:
 - Model export  
 - Validation testing  
 
+
+
+
+
+
+### Transformer (CCT / ViT) Enhancement – Implementation Steps
+
+1. The smoke dataset was downloaded from Roboflow in YOLOv8 format and used to train the YOLOv8 model in Google Colab.
+
+2. The trained YOLOv8 model (`best.pt`) was loaded back into Colab for inference.
+
+3. A validation image was passed into YOLOv8 to obtain smoke detection bounding boxes.
+
+4. The first detected bounding box was extracted and cropped from the original image.
+
+5. A pretrained Vision Transformer (ViT) model from the `timm` library was loaded as a transformer-based enhancement module.
+
+6. The cropped YOLO detection was resized and normalized using ImageNet preprocessing.
+
+7. The transformed crop was passed into the ViT model to generate top-5 prediction outputs.
+
+This process demonstrates a hybrid CNN–Transformer pipeline where YOLOv8 performs fast object detection and the transformer performs second-stage feature-based analysis on the detected region.
+
