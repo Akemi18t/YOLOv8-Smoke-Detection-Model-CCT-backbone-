@@ -14,7 +14,6 @@ In addition to the core YOLOv8 detector, this project also includes a **CCT (Com
 - [Overview](#overview)  
 - [Dataset](#dataset)  
 - [Training Environment (Google Colab)](#training-environment-google-colab)  
-- [How to Train YOLOv8](#how-to-train-yolov8)  
 - [Model Export](#model-export)  
 - [Jetson Xavier NX Deployment](#jetson-xavier-nx-deployment)  
 - [CCT Enhancement Proposal](#cct-enhancement-proposal)  
