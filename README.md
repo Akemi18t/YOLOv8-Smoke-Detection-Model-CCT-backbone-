@@ -86,7 +86,7 @@ This PDF includes:
 
 
 
-### Transformer (CCT / ViT) Enhancement – Implementation Steps
+### CCT Enhancement Proposal – Implementation Steps
 
 1. The smoke dataset was downloaded from Roboflow in YOLOv8 format and used to train the YOLOv8 model in Google Colab.
 
