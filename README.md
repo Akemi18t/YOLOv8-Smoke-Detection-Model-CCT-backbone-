@@ -66,6 +66,8 @@ project = rf.workspace("akemi").project("smoke-ddba9-zjcub")
 version = project.version(1)
 dataset = version.download("yolov8")
 
+```
+
 ## Training Environment (Google Colab)
 ### Detailed Training Notebook (PDF)
 
