@@ -82,6 +82,7 @@ This PDF includes:
 
 
 ### Jetson Xavier NX Deployment
+[Screenshots on Jetson](Screenshots_on_Jetson.pdf).
 
 An attempt was made to deploy the trained YOLOv8 model on the NVIDIA Jetson Xavier NX for real-time edge inference. However, during installation of the `ultralytics` package on the Jetson (ARM/aarch64 architecture), a dependency (`puccinialin`) failed to install due to lack of ARM compatibility on PyPI. As a result, full YOLOv8 execution on the Jetson could not be completed within the project time frame. This deployment attempt and error were documented as part of the project evaluation.
 
