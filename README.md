@@ -47,7 +47,7 @@ This project uses the **Smoke Detection Dataset** from Roboflow:
 https://universe.roboflow.com/jiho-wrqg7/smoke-ddba9
 
 ### Dataset Details  
-- ~438 images  
+- 438 images  
 - 2 classes:  
   - `smoke`  
   - `nonsmoke`  
