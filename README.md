@@ -89,6 +89,7 @@ An attempt was made to deploy the trained YOLOv8 model on the NVIDIA Jetson Xavi
 
 
 ### CCT Enhancement Proposal – Implementation Steps
+[CCT Enhancement PDF](CCT_backbone.pdf)
 
 1. The smoke dataset was downloaded from Roboflow in YOLOv8 format and used to train the YOLOv8 model in Google Colab.
 
